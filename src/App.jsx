@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import CurrencyExchanger from './Context/Context';
+import Wallet from './pages/Wallet/Wallet';
+import Welcome from './pages/welcome/Welcome';
 
 function App() {
+  const [currencyFetch, setCurrencyFetch] = useState();
+  const currencies = async () => {
+    const response = await fetch(
+      'https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI'
+    );
+    const data = await response.json();
+    setCurrencyFetch(data);
+  };
+  console.log(currencyFetch);
+  useEffect(() => {
+    currencies();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CurrencyExchanger.Provider value={(currencyFetch, setCurrencyFetch)}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/wallet" element={<Wallet />} />
+          </Routes>
+        </BrowserRouter>
+      </CurrencyExchanger.Provider>
     </div>
   );
 }
