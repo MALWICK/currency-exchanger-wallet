@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -12,15 +13,15 @@ function App() {
       'https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI'
     );
     const data = await response.json();
-    setCurrencyFetch(data);
+    setCurrencyFetch(...[data.rates]);
   };
-  console.log(currencyFetch);
+
   useEffect(() => {
     currencies();
   }, []);
   return (
     <div className="App">
-      <CurrencyExchanger.Provider value={(currencyFetch, setCurrencyFetch)}>
+      <CurrencyExchanger.Provider value={{ currencyFetch, setCurrencyFetch }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Welcome />} />
