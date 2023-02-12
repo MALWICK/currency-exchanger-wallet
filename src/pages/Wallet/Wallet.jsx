@@ -95,7 +95,7 @@ function Wallet() {
               </div>
               <div className={Styles.left__navnar}>
                 <div className={Styles.flex__box}>
-                  <div>
+                  <div className={Styles.flex__box1}>
                     <p>
                       USD
                       <i className="fa-solid fa-arrow-right" />
@@ -103,7 +103,7 @@ function Wallet() {
                     </p>
                     <span>2.600</span>
                   </div>
-                  <div>
+                  <div className={Styles.flex__box2}>
                     <p>
                       USD
                       <i className="fa-solid fa-arrow-right" />
@@ -113,11 +113,20 @@ function Wallet() {
                   </div>
                 </div>
                 <div className={Styles.icon__container}>
-                  <i className="fa-solid fa-calendar" />
-                  <i className="fa-solid fa-laptop" />
-                  <i className="fa-solid fa-bell" />
+                  <div>
+                    <i className="fa-solid fa-calendar" />
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-laptop" />
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-bell" />
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className={Styles.deposit__container}>
+              <div>ff</div>
             </div>
           </div>
         </div>

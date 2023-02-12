@@ -272,8 +272,81 @@
 
 .navbar {
     width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#1e3fc3, #4e5ee7);
+    padding-left: 5%;
+
+}
+
+.elon {
+    width: 300px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: white;
+    color: #0901f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1756dd;
 }
+
+.flex__box {
+    width: 250px;
+    /* background-color: white; */
+}
+
+.flex__box1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.flex__box1 p {
+    letter-spacing: 4;
+}
+
+.flex__box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.4%;
+}
+
+.left__navnar {
+    width: 1000px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(170, 17, 17); */
+}
+
+.icon__container {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: green;  */
+    gap: 6%;
+}
+
+.icon__container i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.deposit__container {
+    width: 95%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+    
