@@ -125,8 +125,29 @@ function Wallet() {
                 </div>
               </div>
             </div>
-            <div className={Styles.deposit__container}>
-              <div>ff</div>
+            <div className={Styles.deposit__deposit}>
+              <div className={Styles.deposit__container}>
+                <div className={Styles.deposit__content}>
+                  <div className={Styles.deposit__container1}>
+                    <div className={Styles.deposit__container1_currentbalance}>
+                      <h4>Current balance:</h4>
+                      <p>10000</p>
+                      <span>XCFA</span>
+                    </div>
+                  </div>
+                  <div className={Styles.deposit__container1_input}>
+                    <input type="text" placeholder="enter any amount" />
+                    <div className={Styles.deposit__container1_select}>
+                      <select value="USD">
+                        <option>USD</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className={Styles.deposit__button}>
+                    <button type="submit"> Deposit</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
