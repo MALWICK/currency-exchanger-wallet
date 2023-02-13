@@ -6,21 +6,21 @@
 
 .wallet__container {
   width: 100%;
-  height: 200vh;
-  background-color: red;
+  height: 100vh;
+  background-color: rgb(10, 67, 113);
   display: grid;
   grid-template-columns: 13% 1fr;
 }
 
 .left__container {
   background-color: white;
-  height: 50%;
+  height: 100%;
 }
 
 .right__container {
-  background-color: #dcd4d4;
+  background-color: #dbd7d7;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .column__argon {
@@ -341,41 +341,40 @@
 
 .deposit__deposit {
   width: 95%;
-  height: 50vh;
+  height: 93vh;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  flex-direction: column;
+ /*  background-color: red; */
 }
 
 .deposit__container {
   width: 100%;
-  height: 50vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: wheat;
+  background-color: white;
 }
 
 .deposit__content {
-    width: 95%;
-    height: 25vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff59;
+  width: 95%;
+  height: 25vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f4f4d0;
 }
-
-
 
 .deposit__container1 {
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
- /*  background-color: rgb(20, 44, 83); */
+  /*  background-color: rgb(20, 44, 83); */
 }
 
 .deposit__container1_currentbalance {
@@ -396,8 +395,8 @@
 }
 
 .deposit__container1_currentbalance h4 {
-    color:#0053d7;
-    font-weight: 600;
+  color: #0053d7;
+  font-weight: 600;
 }
 
 .deposit__container1_input {
@@ -406,7 +405,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
- /*  background-color: rebeccapurple; */
+  /*  background-color: rebeccapurple; */
 }
 
 .deposit__container1_input input {
@@ -422,8 +421,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
-  rgba(161, 151, 153, 0.1) 0px 8px 24px,
-  rgba(58, 56, 56, 0.1) 0px 16px 56px;
+    rgba(161, 151, 153, 0.1) 0px 8px 24px, rgba(58, 56, 56, 0.1) 0px 16px 56px;
 }
 
 .deposit__container1_select {
@@ -445,18 +443,138 @@
 }
 
 .deposit__button {
-    width: 300px;
+  width: 300px;
   /*   background-color: green; */
 }
 
 .deposit__button button {
-    width: 250px;
-    height: 6vh;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    font-size: 1.7rem;
-    font-weight: 500;
-    background-color: #075be2;
-    color: #dcd7d7;
+  width: 250px;
+  height: 6vh;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: #075be2;
+  color: #dcd7d7;
+}
+
+.diff__wallet {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: red; */
+  gap: 4%;
+}
+
+.wallet1 {
+  width: 440px;
+  height: 139px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
+    rgba(161, 151, 153, 0.1) 0px 8px 24px, rgba(58, 56, 56, 0.1) 0px 16px 56px;
+}
+
+.wallet1__p  {
+  width: 300px;
+  height: 100px;
+  line-height: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.wallet2__p  {
+  width: 300px;
+  height: 100px;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wallet3__p  {
+  width: 300px;
+  height: 100px;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.wallet2 {
+  width: 440px;
+  height: 139px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
+    rgba(161, 151, 153, 0.1) 0px 8px 24px, rgba(58, 56, 56, 0.1) 0px 16px 56px;
+}
+
+
+.wallet3 {
+  width: 440px;
+  height: 139px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
+    rgba(161, 151, 153, 0.1) 0px 8px 24px, rgba(58, 56, 56, 0.1) 0px 16px 56px;
+}
+
+.graphers {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 7px;
+  /* background-color: green; */
+}
+
+.img1 img{
+  height: 35vh;
+  width: 850px;
+}
+
+.img2 img{
+  height: 35vh;
+  width: 650px;
+  border-radius: 2px solid white;
+  border-radius: 7px;
 }

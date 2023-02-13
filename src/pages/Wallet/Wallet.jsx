@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import Styles from './Wallet.module.css';
 import CurrencyExchanger from '../../Context/Context';
 import Clone from '../../Assets/imagesf/clone.jpg';
+import pgraph from '../../Assets/imagesf/1graph.png';
+import maingrapgh from '../../Assets/imagesf/maingraph.png';
 
 function Wallet() {
   const currencyFetch = useContext(CurrencyExchanger);
@@ -127,7 +129,7 @@ function Wallet() {
             </div>
             <div className={Styles.deposit__deposit}>
               <div className={Styles.deposit__container}>
-                <div className={Styles.deposit__content}>
+                <form className={Styles.deposit__content}>
                   <div className={Styles.deposit__container1}>
                     <div className={Styles.deposit__container1_currentbalance}>
                       <h4>Current balance:</h4>
@@ -145,6 +147,43 @@ function Wallet() {
                   </div>
                   <div className={Styles.deposit__button}>
                     <button type="submit"> Deposit</button>
+                  </div>
+                </form>
+                <div className={Styles.diff__wallet}>
+                  <div className={Styles.wallet1}>
+                    <div className={Styles.wallet1__p}>
+                      <p>USD</p>
+                      <p>0</p>
+                    </div>
+                    <div>
+                      <i className="fa-solid fa-wallet" />
+                    </div>
+                  </div>
+                  <div className={Styles.wallet2}>
+                    <div className={Styles.wallet2__p}>
+                      <p>EUR</p>
+                      <p>0</p>
+                    </div>
+                    <div>
+                      <i className="fa-solid fa-wallet" />
+                    </div>
+                  </div>
+                  <div className={Styles.wallet3}>
+                    <div className={Styles.wallet3__p}>
+                      <p>GBP</p>
+                      <p>0</p>
+                    </div>
+                    <div>
+                      <i className="fa-solid fa-wallet" />
+                    </div>
+                  </div>
+                </div>
+                <div className={Styles.graphers}>
+                  <div className={Styles.img1}>
+                    <img src={pgraph} alt="graph" />
+                  </div>
+                  <div className={Styles.img2}>
+                    <img src={maingrapgh} alt="graph" />
                   </div>
                 </div>
               </div>
