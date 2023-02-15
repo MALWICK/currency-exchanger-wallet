@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -8,20 +9,22 @@ import Welcome from './pages/welcome/Welcome';
 
 function App() {
   const [currencyFetch, setCurrencyFetch] = useState();
-  const currencies = async () => {
-    const response = await fetch(
-      'https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI'
-    );
-    const data = await response.json();
-    setCurrencyFetch(...[data.rates]);
-  };
 
   useEffect(() => {
-    currencies();
+    axios
+      .get('https://api.exchangerate-api.com/v4/latest/USD')
+      .then((res) => {
+        console.log(res);
+        setCurrencyFetch(res.data.rates);
+        /*   console.log(res.data.rates); */
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
   return (
     <div className="App">
-      <CurrencyExchanger.Provider value={{ currencyFetch, setCurrencyFetch }}>
+      <CurrencyExchanger.Provider value={[currencyFetch, setCurrencyFetch]}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Welcome />} />

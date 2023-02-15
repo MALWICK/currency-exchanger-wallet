@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PasiveNavBar from '../../components/Pasive__Navbar/PasiveNavBar';
 import Styles from './Welcome.module.css';
 import TechDaily from '../../Assets/imagesf/techdaily.jpg';
@@ -71,10 +72,12 @@ function Welcome() {
                   </div>
                 </div>
                 <div className={Styles.signup__options}>
-                  <button type="button">
-                    <i className="fa-solid fa-user" />
-                    Sign up with Email or Phone
-                  </button>
+                  <Link to="/wallet">
+                    <button type="button">
+                      <i className="fa-solid fa-user" />
+                      Sign up with Email or Phone
+                    </button>
+                  </Link>
                 </div>
                 <div className={Styles.other__signup_methods}>
                   <div className={Styles.paragraph__break}>

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
 
-const CurrencyExchanger = createContext('USD');
+const CurrencyExchanger = createContext();
 
 export default CurrencyExchanger;

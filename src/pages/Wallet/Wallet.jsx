@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Styles from './Wallet.module.css';
 import CurrencyExchanger from '../../Context/Context';
 import Clone from '../../Assets/imagesf/clone.jpg';
@@ -6,8 +6,11 @@ import pgraph from '../../Assets/imagesf/1graph.png';
 import maingrapgh from '../../Assets/imagesf/maingraph.png';
 
 function Wallet() {
-  const currencyFetch = useContext(CurrencyExchanger);
+  const [currencyFetch, setCurrencyFetch] = useContext(CurrencyExchanger);
   /* console.log(currencyFetch.rates, setCurrencyFetch); */
+  useEffect(() => {
+    console.log(currencyFetch);
+  }, []);
   console.log(currencyFetch);
   return (
     <div className={Styles.wallet}>
@@ -141,7 +144,14 @@ function Wallet() {
                     <input type="text" placeholder="enter any amount" />
                     <div className={Styles.deposit__container1_select}>
                       <select value="USD">
-                        <option>USD</option>
+                        <option>
+                          <ul>
+                            {/* {currencyFetch.map((post) => (
+                              <li key={post.id}>{post.rates}</li>
+                            ))} */}
+                            USD
+                          </ul>
+                        </option>
                       </select>
                     </div>
                   </div>
