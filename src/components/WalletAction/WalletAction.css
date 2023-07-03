@@ -1,0 +1,66 @@
+.wallet__action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet__action__innerContainer {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  z-index: 2;
+  position: relative;
+  top: -120px;
+  border-radius: 0.5rem;
+}
+
+.firstwallet__Div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #939bc733;
+  margin-bottom: 1.4%;
+}
+
+.walletdiv1 {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondwallet__Div {
+  width: 90%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.input__div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.input__div span {
+  margin-bottom: 2%;
+  font-size: 18px;
+}
+
+.input__div input {
+  width: 285px;
+  padding: 4%;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}

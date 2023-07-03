@@ -1,0 +1,43 @@
+.wallet__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(10, 20, 110);
+}
+
+.nav__inner {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.logo i {
+  color: white;
+}
+
+.bus {
+  color: grey;
+}
+
+.anchor {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.anchor a {
+  color: white;
+}

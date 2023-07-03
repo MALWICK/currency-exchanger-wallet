@@ -6,6 +6,7 @@ import TechDaily from '../../Assets/imagesf/techdaily.jpg';
 import Stats from '../../Assets/imagesf/stats.jpg';
 import Crypto from '../../Assets/imagesf/crypto.jpg';
 import Card from '../../Assets/imagesf/card.jpg';
+import PortFolio from '../../components/PortFolio/PortFolio';
 
 function Welcome() {
   return (
@@ -188,115 +189,10 @@ function Welcome() {
                 <button type="button">Get Started</button>
               </div>
             </div>
-            <div className={Styles.propagander}>
-              <div className={Styles.propagander__title}>
-                <h2> Fast and Simple Exchange For Your Business</h2>
-                <p>Built for your business to connect more customers</p>
-              </div>
-              <div className={Styles.propagander__info1}>
-                <div className={Styles.propagander__info1_imgholder}>
-                  <img
-                    src="https://switchwallet.io/assets/images/home2.png"
-                    alt="orportunities"
-                  />
-                </div>
-                <div className={Styles.propagander__info1_textholder}>
-                  <div className={Styles.propagander__info1_h3}>
-                    <h3>Multichain currency Wallet API</h3>
-                  </div>
-                  <p>
-                    Digital assets are the new world currency. SwitchWallet
-                    provides an API infrastructure service that allows you to
-                    transact digital assets,
-                    <br /> across multiple chains and guarantee high-level
-                    security for your transactions.
-                  </p>
-                </div>
-              </div>
-              <div className={Styles.propagander__info2}>
-                <div className={Styles.propagander__info2_textholder}>
-                  <div className={Styles.propagander__info2_h3}>
-                    <h3>Secure, Low-Cost Wallet Service</h3>
-                  </div>
-                  <div className={Styles.propagander__info2_p}>
-                    <p>
-                      We help businesses save time and money building solutions
-                      on the blockchain. With our easy and simple setup process,
-                      well have you enjoying our service in no time.
-                      SwitchWallet offers the best competitive rates, fast
-                      crypto transactions, and a variety of customizable
-                      features to help your business succeed.
-                    </p>
-                  </div>
-                </div>
-                <div className={Styles.propagander__info2_imgholder}>
-                  <img
-                    src="https://switchwallet.io/assets/images/home3.png"
-                    alt="options"
-                  />
-                </div>
-              </div>
-              <div className={Styles.propagander__info3}>
-                <div className={Styles.propagander__info3_imgholder}>
-                  <img
-                    src="https://switchwallet.io/assets/images/home4.png"
-                    alt="choices"
-                  />
-                </div>
-                <div className={Styles.propagander__info3_textholder}>
-                  <div className={Styles.propagander__info2_h3}>
-                    <h3>Supports Multiple Currencies</h3>
-                  </div>
-                  <p>
-                    SwitchWallet supports transactions in multiple
-                    cryptocurrencies such as BUSD, USDT, USDC, DAI and others
-                  </p>
-                  {/*  <img
-                    src="https://www.nab.com.au/personal/accounts/savings-accounts/nab-isaver/_jcr_content/root/banner/image.coreimg.90.1920.jpeg/1666934085946/isaver-social-and-onsite-banner-1920x690.jpeg"
-                    alt="slide"
-                  /> */}
-                </div>
-              </div>
-            </div>
-            <div className={Styles.inquiries__container}>
-              <div className={Styles.inquiries__h3}>
-                <h3>Need help? </h3>
-              </div>
-              <div className={Styles.inquiries__flexcontainer}>
-                <div className={Styles.inquiries__support}>
-                  <h4>
-                    <i className="fa-solid fa-headset" />
-                    24/7 Chat Support
-                  </h4>
-                  <p>
-                    Join our 24/7 chat support group to get in touch with your
-                    customers.
-                  </p>
-                  <span>Chat now</span>
-                </div>
-                <div className={Styles.inquiries__faq}>
-                  <h4>
-                    <i className="fa-solid fa-message" />
-                    FAQs
-                  </h4>
-                  <p>
-                    View FAQs for detailed instructions on specific features.
-                  </p>
-                  <span>Learn More</span>
-                </div>
-                <div className={Styles.inquiries__blog}>
-                  <h4>
-                    <i className="fa-solid fa-newspaper" />
-                    Blog
-                  </h4>
-                  <p>Stay up to date with the latest stories and commentary.</p>
-                  <span>Learn More</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+      <PortFolio />
     </div>
   );
 }

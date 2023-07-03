@@ -13,6 +13,9 @@
   align-items: center;
   gap: 5%;
   background-color: #3f57dbee;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
 }
 
 .navbar .ul__naming {
