@@ -7,7 +7,7 @@
 
 .wallet__action__innerContainer {
   width: 60%;
-  height: 300px;
+  height: 295px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   background-color: #f2f2f2;
   z-index: 2;
   position: relative;
-  top: -120px;
+  bottom: -90px;
   border-radius: 0.5rem;
 }
 
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #939bc733;
-  margin-bottom: 1.4%;
+  margin-bottom: 2%;
 }
 
 .walletdiv1 {
@@ -38,18 +38,20 @@
 
 .secondwallet__Div {
   width: 90%;
-  height: 130px;
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 2%;
+  justify-content: center;
+  margin-bottom: 2.8%;
+  gap: 3%;
+  /*  background-color: blue; */
 }
 
 .input__div {
   text-align: left;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
+  /*  background-color: orange; */
 }
 
 .input__div span {
@@ -63,4 +65,65 @@
   border: none;
   outline: none;
   border-radius: 0.4rem;
+}
+
+.convert__logoAction {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  /*   background-color: blue; */
+}
+
+.convertAction {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text__action__button {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*  background-color: yellow; */
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+.text {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 12px;
+  background-color: #dde9faec;
+  padding: 0.9%;
+  border-radius: 0.5rem;
+}
+
+.btn__div {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1%;
+  /*  background-color: red; */
+}
+
+.btn__div button {
+  width: 150px;
+  height: 55px;
+  font-size: 20px;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #0071eb;
+  border: none;
 }

@@ -1,9 +1,10 @@
 .firstWallet__container {
   width: 100%;
-  height: 50vh;
+  height: 38vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: url('../../Assets/imagesf/ba1.jpg');
   background-repeat: no-repeat;
   object-fit: cover;
@@ -12,8 +13,10 @@
 }
 
 .firstWallet__container__text {
+  width: 60%;
   color: white;
   line-height: 2;
+  margin-top: 6%;
 }
 
 .firstWallet__container__text h2 {
