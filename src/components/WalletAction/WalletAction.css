@@ -6,17 +6,18 @@
 }
 
 .wallet__action__innerContainer {
-  width: 60%;
+  width: 55%;
   height: 295px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #fff;
   z-index: 2;
   position: relative;
-  bottom: -90px;
+  bottom: -55px;
   border-radius: 0.5rem;
+  box-shadow: rgba(35, 55, 80, 0.3) 0px 6px 12px;
 }
 
 .firstwallet__Div {
@@ -51,7 +52,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  /*  background-color: orange; */
+  /* background-color: orange; */
 }
 
 .input__div span {
@@ -62,9 +63,17 @@
 .input__div input {
   width: 285px;
   padding: 4%;
-  border: none;
+  border: 1px solid #808080b7;
   outline: none;
   border-radius: 0.4rem;
+}
+
+.input__div input:focus {
+  border: 1px solid #808080b7;
+}
+
+.input__div span {
+  padding-left: 2.5%;
 }
 
 .convert__logoAction {
@@ -73,7 +82,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 2%;
-  /*   background-color: blue; */
+  /*  background-color: red; */
 }
 
 .convertAction {
@@ -88,12 +97,12 @@
 }
 
 .text__action__button {
-  width: 90%;
+  width: 95%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*  background-color: yellow; */
+  /*   background-color: yellow; */
   padding: 2%;
   margin-bottom: 1%;
 }
@@ -109,13 +118,17 @@
   border-radius: 0.5rem;
 }
 
+.hide-output {
+  display: none;
+}
+
 .btn__div {
-  width: 250px;
+  width: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1%;
-  /*  background-color: red; */
+  /* background-color: red; */
 }
 
 .btn__div button {
@@ -126,4 +139,27 @@
   border-radius: 0.5rem;
   background-color: #0071eb;
   border: none;
+}
+
+/* tablet responsiveness for wallet */
+@media (max-width: 768px) {
+  .wallet__action__innerContainer {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .secondwallet__Div {
+    width: 100%;
+    height: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .input__div input {
+    width: 193px;
+  }
+
+  .text {
+    font-size: 11px;
+  }
 }

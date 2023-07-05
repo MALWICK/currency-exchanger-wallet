@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   background: rgb(10, 20, 110);
+  top: 0;
+  position: sticky;
 }
 
 .nav__inner {
@@ -32,7 +34,7 @@
 }
 
 .anchor {
-  width: 600px;
+  width: 640px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,4 +42,54 @@
 
 .anchor a {
   color: white;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.anchor.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .anchor {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav__inner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .anchor {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
 }
