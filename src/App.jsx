@@ -1,25 +1,31 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import CurrencyExchanger from './Context/Context';
 import Wallet from './pages/Wallet/Wallet';
-import Welcome from './pages/welcome/Welcome';
-import ApiFetch from './ApiFetch';
+import Accounts from './pages/Accounts/Accounts';
 
 function App() {
-  const { currencyFetch, setCurrencyFetch, loading, error } = ApiFetch(
-    `https://api.exchangerate-api.com/v4/latest/USD`
-  );
-  console.log(currencyFetch);
+  const [currency1, setCurrency1] = useState(100);
+  const [currency2, setCurrency2] = useState(500);
+  const [currency3, setCurrency3] = useState(10000);
   return (
     <div className="App">
       <CurrencyExchanger.Provider
-        value={{ currencyFetch, setCurrencyFetch, loading, error }}
+        value={{
+          setCurrency1,
+          setCurrency2,
+          setCurrency3,
+          currency1,
+          currency2,
+          currency3,
+        }}
       >
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Welcome />} />
-            <Route path="/wallet" element={<Wallet />} />
+            <Route path="/" element={<Wallet />} />
+            <Route path="/account" element={<Accounts />} />
           </Routes>
         </BrowserRouter>
       </CurrencyExchanger.Provider>

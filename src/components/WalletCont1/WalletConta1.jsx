@@ -1,6 +1,5 @@
 import React from 'react';
 import './WalletCOnt1.css';
-import WalletAction from '../WalletAction/WalletAction';
 
 function WalletConta1() {
   return (
@@ -9,7 +8,6 @@ function WalletConta1() {
         <h2>Switch Wallet Currency Converter</h2>
         <p>Ckeck live foreign currency exchange rates</p>
       </div>
-      <WalletAction />
     </div>
   );
 }

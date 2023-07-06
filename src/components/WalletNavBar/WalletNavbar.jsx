@@ -12,8 +12,8 @@ function WalletNavbar() {
             <i className="fa-solid fa-repeat" />
             Switch Wallet
           </span>
-          <span>Personal</span>
-          <p>|</p>
+          <span className="perso">Personal</span>
+          <p className="perso">|</p>
           <p className="bus">Business</p>
         </div>
         <div className={`anchor ${isOpen ? 'active' : ''}`}>
