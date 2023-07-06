@@ -7,9 +7,9 @@ import Wallet from './pages/Wallet/Wallet';
 import Accounts from './pages/Accounts/Accounts';
 
 function App() {
-  const [currency1, setCurrency1] = useState(100);
-  const [currency2, setCurrency2] = useState(500);
-  const [currency3, setCurrency3] = useState(10000);
+  const [currency1, setCurrency1] = useState(0);
+  const [currency2, setCurrency2] = useState(0);
+  const [currency3, setCurrency3] = useState(0);
   const [totalCurrency, setTotalCurrency] = useState(0);
   const [select, setSelect] = useState();
 
