@@ -1,0 +1,59 @@
+.wallet__operation {
+  width: 53%;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 1%;
+}
+
+.wallet__operationContainer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c8deff33;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.operation__totalAmt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.multi__task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Wallets__holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.select__initial_value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet__one {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+}
