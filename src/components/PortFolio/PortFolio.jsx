@@ -3,7 +3,7 @@ import './portfolio.css';
 import Image1 from '../../Assets/imagesf/1.png';
 import Image2 from '../../Assets/imagesf/2.png';
 import Image3 from '../../Assets/imagesf/3.png';
-import Image4 from '../../Assets/imagesf/Binance-mobile-dashboard-page.png';
+import Image4 from '../../Assets/imagesf/Xe-App-iPhones__1_.png';
 
 function PortFolio() {
   return (

@@ -1,54 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import './WalletAction.css';
-import axios from 'axios';
+import CurrencyExchanger from '../../Context/Context';
 
 function WalletAction() {
-  const [amount, setAmount] = useState(0);
-  const [fromCurrency, setFromCurrency] = useState('USD');
-  const [toCurrency, setToCurrency] = useState('EUR');
-  const [convertedAmount, setConvertedAmount] = useState(0);
-  const [currencies, setCurrencies] = useState([]);
-  const [apiKey] = useState('a4f445c212e54cca9ccf72f8038d2e09');
-
-  useEffect(() => {
-    async function fetchCurrencies() {
-      try {
-        const response = await axios.get(
-          `https://openexchangerates.org/api/currencies.json?app_id=${apiKey}`
-        );
-        setCurrencies(response.data);
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    fetchCurrencies();
-  }, [apiKey]);
-
-  function handleAmountChange(e) {
-    setAmount(e.target.value);
-  }
-
-  function handleFromCurrencyChange(e) {
-    setFromCurrency(e.target.value);
-  }
-
-  function handleToCurrencyChange(e) {
-    setToCurrency(e.target.value);
-  }
-
-  async function handleConvert() {
-    try {
-      const response = await axios.get(
-        `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`
-      );
-      const { rates } = response.data;
-      console.log(rates);
-      const conversionRate = rates[toCurrency] / rates[fromCurrency];
-      setConvertedAmount(amount * conversionRate);
-    } catch (err) {
-      console.error(err);
-    }
-  }
+  const {
+    handleAmountChange,
+    fromCurrency,
+    handleFromCurrencyChange,
+    currencies,
+    toCurrency,
+    handleToCurrencyChange,
+    convertedAmount,
+    handleConvert,
+  } = useContext(CurrencyExchanger);
   return (
     <div className="wallet__action__innerContainer">
       <div className="firstwallet__Div">
