@@ -32,23 +32,41 @@ function WalletDetails() {
           <div className={Styles.currency__name_detail1}>
             <div className={Styles.currency__name_container1}>
               <div className={Styles.currency__name_currency1}>
-                <p>United State Dollar</p>
-                <p>1 USD</p>
-                <p className={Styles.change__color}>+0.02%</p>
+                <div>
+                  <p>United State Dollar</p>
+                </div>
+                <div>
+                  <p>1 USD</p>
+                </div>
+                <div>
+                  <p className={Styles.change__color}>+0.02%</p>
+                </div>
               </div>
             </div>
             <div className={Styles.currency__name_container2}>
               <div className={Styles.currency__name_currency2}>
-                <p>England Pound eu</p>
-                <p>1 GBP</p>
-                <p className={Styles.change__color}>+0.10%</p>
+                <div>
+                  <p>England Pound eu</p>
+                </div>
+                <div>
+                  <p>1 GBP</p>
+                </div>
+                <div>
+                  <p className={Styles.change__color}>+0.10%</p>
+                </div>
               </div>
             </div>
             <div className={Styles.currency__name_container3}>
               <div className={Styles.currency__name_currency3}>
-                <p>Swiss Francs SW</p>
-                <p>1 CHF</p>
-                <p className={Styles.change__color_red}>-0.07%</p>
+                <div>
+                  <p>Swiss Francs SWI</p>
+                </div>
+                <div>
+                  <p>1 CHF</p>
+                </div>
+                <div>
+                  <p className={Styles.change__color_red}>-0.07%</p>
+                </div>
               </div>
             </div>
             <div className={Styles.get__started}>

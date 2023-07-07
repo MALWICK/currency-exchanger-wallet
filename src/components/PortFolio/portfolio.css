@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 2%;
-  /* background-color: red; */
+  background-color: white;
 }
 
 .left__port {
@@ -31,6 +31,7 @@
 .port__maintext p {
   color: #616060;
   font-size: 26px;
+  padding-left: 1%;
 }
 
 .port__options {

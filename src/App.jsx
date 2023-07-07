@@ -100,7 +100,7 @@ function App() {
       const { rates } = response.data;
       console.log(rates);
       const conversionRate = rates[toCurrency] / rates[fromCurrency];
-      setConvertedAmount(amount * conversionRate);
+      setConvertedAmount(amount * conversionRate).toFixed(2);
       console.log(rates.USD, rates.EUR, rates.XAF);
     } catch (err) {
       console.error(err);

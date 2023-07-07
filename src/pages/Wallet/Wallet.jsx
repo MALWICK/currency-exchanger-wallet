@@ -5,6 +5,7 @@ import WalletConta1 from '../../components/WalletCont1/WalletConta1';
 import WalletDetails from '../../components/WalletDetails/WalletDetails';
 import WalletActtion from '../../components/WalletAction/WalletAction';
 import PortFolio from '../../components/PortFolio/PortFolio';
+import ToolsCard from '../../components/ToolsCards/ToolCards';
 
 function Wallet() {
   return (
@@ -14,6 +15,7 @@ function Wallet() {
       <WalletActtion />
       <WalletDetails />
       <PortFolio />
+      <ToolsCard />
     </div>
   );
 }

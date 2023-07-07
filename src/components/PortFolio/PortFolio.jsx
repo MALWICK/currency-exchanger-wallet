@@ -1,8 +1,8 @@
 import React from 'react';
 import './portfolio.css';
-import Image1 from '../../Assets/imagesf/1.png';
-import Image2 from '../../Assets/imagesf/2.png';
-import Image3 from '../../Assets/imagesf/3.png';
+import Image1 from '../../Assets/imagesf/sa.png';
+import Image2 from '../../Assets/imagesf/sa1.png';
+import Image3 from '../../Assets/imagesf/sas.png';
 import Image4 from '../../Assets/imagesf/Xe-App-iPhones__1_.png';
 
 function PortFolio() {
