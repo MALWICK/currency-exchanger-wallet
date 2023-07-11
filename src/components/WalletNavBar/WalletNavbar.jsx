@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WalletNav.css';
+import { Link } from 'react-router-dom';
 
 function WalletNavbar() {
   const [isOpen, setIsopen] = useState(false);
@@ -17,12 +18,11 @@ function WalletNavbar() {
           <p className="bus">Business</p>
         </div>
         <div className={`anchor ${isOpen ? 'active' : ''}`}>
-          <a href="send money" aria-hidden>
-            Send Money
-          </a>
-          <a href="send money" aria-hidden>
+          <Link to="/account">Send Money</Link>
+          {/* <a href="send money" aria-hidden>
             Converter
-          </a>
+          </a> */}
+          <Link to="/">Converter</Link>
           <a href="send money" aria-hidden>
             Currency API
           </a>
