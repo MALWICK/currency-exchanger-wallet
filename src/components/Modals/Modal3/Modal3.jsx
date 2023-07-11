@@ -27,7 +27,7 @@ function Modal({ setIsOpen }) {
       value.toCurrency === 'EUR' &&
       +value.amount <= currency1
     ) {
-      const val = currency1 - +value.amount2;
+      const val = currency1 - +value.amount;
       setCurrency1(val);
       setCurrency2(currency2 + +value.amount * 0.93);
       setIsOpen(false);
