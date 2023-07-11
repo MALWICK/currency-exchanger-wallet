@@ -15,7 +15,7 @@
 .firstWallet__container__text {
   width: 60%;
   color: white;
-  line-height: 1.7;
+  line-height: 0.8;
   /*  margin-top: 6%; */
 }
 
@@ -39,5 +39,15 @@
     width: 85%;
     line-height: 1.5;
     padding-top: 9%;
+  }
+}
+
+@media (max-width: 400px) {
+  .firstWallet__container__text h2 {
+    font-size: 1.5rem;
+  }
+
+  .firstWallet__container__text p {
+    font-size: 15px;
   }
 }

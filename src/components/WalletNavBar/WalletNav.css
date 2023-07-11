@@ -4,17 +4,15 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 501;
   top: 0px;
   left: 0px;
-  width: 100%;
-  background: rgb(10, 20, 110);
+  background: #0a146e;
   transition: 0.3s ease 0s;
   box-shadow: rgba(0, 17, 51, 0.05) 0px 0px 15px 0px;
 }
 
 .nav__inner {
-  width: 97%;
+  width: 98%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -39,14 +37,26 @@
 }
 
 .anchor {
-  width: 640px;
+  width: 630px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .anchor a {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.anchor a:hover {
+  background: #464e97f1;
+  border-radius: 0.5rem;
 }
 
 .navbar-toggle {
@@ -68,14 +78,26 @@
 }
 
 .anchor.active {
-  margin-top: 3%;
-  width: 50%;
+  margin-top: 44%;
+  width: 100%;
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 2;
+  bottom: 10px;
+  cursor: pointer;
+  background-color: #0a146e;
+}
+
+.anchor.active a {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.anchor.active a:hover {
+  background-color: #39408070;
 }
 
 @media (max-width: 768px) {
@@ -86,26 +108,30 @@
   .navbar-toggle {
     display: block;
   }
+
+  .perso  {
+    display: none;
+  } 
 }
 
 @media (max-width: 320px) {
   .wallet__nav {
-    justify-content: space-between;
   }
 
+  .wallet__nav {
+    justify-content: space-between;
+  }
   .nav__inner {
     width: 100%;
     padding: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-
   .anchor {
     display: none;
     margin-top: 10px;
   }
 
   .logo {
-    width: 50%;
     text-align: left;
   }
 
@@ -119,5 +145,21 @@
 
   .bus {
     display: none;
+  }
+
+  .anchor.active {
+    margin-top: 120%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+    bottom: 10px;
+  }
+
+  .logo {
+    font-size: 12px;
+    width: 100px;
   }
 }

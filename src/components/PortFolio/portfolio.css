@@ -1,10 +1,19 @@
-.port__container {
+.port {
   width: 85%;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4%;
+  background-color: white;
+}
+
+.port__container {
+  height: 90vh;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2%;
   background-color: white;
 }
 
@@ -24,7 +33,8 @@
   font-weight: 600;
   font-size: 31px;
   line-height: 55px;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  color: #0071eb;
   /* background-color: green; */
 }
 
@@ -99,7 +109,106 @@
 }
 
 .right__port img {
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 60%;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .port__maintext {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .port__maintext p {
+    padding-left: 0;
+    padding-right: 13%;
+  }
+
+  .port__container {
+    width: 90%;
+    height: fit-content;
+    margin-top: 0%;
+    background-color: white;
+  }
+
+  .left__port {
+    width: 50%;
+    height: fit-content;
+    line-height: 2;
+    padding: 2%;
+    /*  background-color: yellow; */
+  }
+
+  .port__option1 {
+    width: 100%;
+    height: fit-content;
+    /*  background-color: aqua; */
+  }
+
+  .port__btn button {
+    padding: 6.6%;
+    margin-top: 2%;
+  }
+
+  .box__img {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box__img img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 630px) {
+  .port {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .port__container {
+    width: 90%;
+    display: block;
+  }
+
+  .box__text {
+    width: 86%;
+  }
+
+  .left__port {
+    width: 96%;
+  }
+
+  .port__option1 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    /* background-color: aqua; */
+    flex-direction: column;
+  }
+
+  .port__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .port__maintext {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .port__maintext p {
+    font-size: 15px;
+  }
+
+  .right__port {
+    /* background-color: blueviolet; */
+    width: 100%;
+    margin-top: 13%;
+  }
 }

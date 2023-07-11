@@ -19,6 +19,7 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState(0);
   const [currencies, setCurrencies] = useState([]);
   const [apiKey] = useState('a4f445c212e54cca9ccf72f8038d2e09');
+  const [rater, setRater] = useState([]);
 
   useEffect(() => {
     async function fetchCurrencies() {
@@ -42,6 +43,7 @@ function App() {
         `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`
       );
       const { rates } = response.data;
+      setRater(rates);
 
       if (select === undefined) {
         const defaultCurrency = `${(
@@ -93,18 +95,10 @@ function App() {
   }
 
   async function handleConvert() {
-    try {
-      const response = await axios.get(
-        `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`
-      );
-      const { rates } = response.data;
-      console.log(rates);
-      const conversionRate = rates[toCurrency] / rates[fromCurrency];
-      setConvertedAmount(amount * conversionRate).toFixed(2);
-      console.log(rates.USD, rates.EUR, rates.XAF);
-    } catch (err) {
-      console.error(err);
-    }
+    console.log(rater);
+    const conversionRate = rater[toCurrency] / rater[fromCurrency];
+    setConvertedAmount(amount * conversionRate).toFixed(2);
+    console.log(rater.USD, rater.EUR, rater.XAF);
 
     console.log(setTotalCurrency);
   }

@@ -33,9 +33,9 @@ function WalletDetails() {
             <div className={Styles.currency__name_container1}>
               <div className={Styles.currency__name_currency1}>
                 <div>
-                  <p>United State Dollar</p>
+                  <p>United State </p>
                 </div>
-                <div>
+                <div className={Styles.prices}>
                   <p>1 USD</p>
                 </div>
                 <div>
@@ -46,9 +46,9 @@ function WalletDetails() {
             <div className={Styles.currency__name_container2}>
               <div className={Styles.currency__name_currency2}>
                 <div>
-                  <p>England Pound eu</p>
+                  <p>England Pound</p>
                 </div>
-                <div>
+                <div className={Styles.prices}>
                   <p>1 GBP</p>
                 </div>
                 <div>
@@ -59,9 +59,9 @@ function WalletDetails() {
             <div className={Styles.currency__name_container3}>
               <div className={Styles.currency__name_currency3}>
                 <div>
-                  <p>Swiss Francs SWI</p>
+                  <p>Swiss Francs </p>
                 </div>
-                <div>
+                <div className={Styles.prices}>
                   <p>1 CHF</p>
                 </div>
                 <div>

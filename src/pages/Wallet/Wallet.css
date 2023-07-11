@@ -5,6 +5,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 :root {

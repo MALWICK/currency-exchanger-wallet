@@ -1,20 +1,20 @@
 .wallet__cont {
-  width: 100%;
+  width: min(100%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /*  background-color: red; */
 }
 
 .ads {
   background: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-  width: 100%;
+  width: min(100%);
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
-  /*  background-color: red; */
 }
 
 .ads__container {
@@ -34,7 +34,7 @@
 .switch__heading {
   font-size: 32px;
   font-weight: 700;
-  color: #0a146e;
+  color: #0071eb;
 }
 
 .currency__container {
@@ -256,7 +256,7 @@
   font-size: 1.2rem;
   border: none;
   border-radius: 5px;
-  background-color: #0071EB;
+  background-color: #0071eb;
 }
 
 .propagander {
@@ -515,5 +515,241 @@
   }
   to {
     left: 400px;
+  }
+}
+
+.prices {
+  width: 100px;
+}
+
+.currency__name_currency2 .prices {
+  padding-right: 2%;
+}
+
+@media (max-width: 768px) {
+  .currency__container_content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*   background-color: #0a146e; */
+    padding-bottom: 2%;
+  }
+
+  .currency__mainheading {
+    width: 99%;
+    /* background-color: pink; */
+  }
+
+  .currency__name_container1 {
+    width: 97%;
+  }
+
+  .currency__name_currency1 {
+    width: 99%;
+  }
+
+  .change__color {
+    color: #097109;
+    font-weight: 500;
+  }
+
+  .currency__name_currency1:hover {
+    background-color: #7fb2f531;
+  }
+
+  .currency__name_container2 {
+    width: 97%;
+  }
+
+  .currency__name_currency2 {
+    width: 99%;
+  }
+
+  .currency__name_currency2:hover {
+    background-color: #7fb2f531;
+  }
+
+  .currency__name_container3 {
+    width: 98%;
+  }
+
+  .currency__name_currency3 {
+    width: 99%;
+  }
+
+  .currency__name_container {
+    width: 95%;
+  }
+
+  .get__started_p h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 8%;
+  }
+
+  .get__started_button {
+    width: 99%;
+    margin-top: 3%;
+  }
+
+  .get__started_button button {
+    width: 170px;
+    padding: 2.4%;
+  }
+
+  .ads {
+    background-color: red;
+  }
+}
+
+@media (max-width: 400px) {
+  .wallet__cont {
+    height: fit-content;
+  }
+
+  .currency__container_content {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*        background-color: #0a146e;  */
+    padding-bottom: 2%;
+    height: fit-content;
+  }
+
+  .currency__mainheading {
+    width: 99%;
+    /*  background-color: pink; */
+  }
+
+  .currency__name {
+    width: 100%;
+  }
+
+  .currency__name_container {
+    width: 100%;
+    font-size: 8px;
+    margin-top: 5%;
+  }
+
+  .currency__name_container p {
+    font-size: 20px;
+  }
+
+  .currency__name_container1 {
+    width: 100%;
+  }
+
+  .currency__name_currency1 {
+    width: 99%;
+    font-size: 1.41rem;
+  }
+
+  .change__color {
+    color: #097109;
+    font-weight: 500;
+  }
+
+  .currency__name_currency1:hover {
+    background-color: #7fb2f531;
+  }
+
+  .currency__name_container2 {
+    width: 100%;
+  }
+
+  .currency__name_currency2 {
+    width: 100%;
+    font-size: 1.21rem;
+  }
+
+  .currency__name_currency2:hover {
+    background-color: #7fb2f531;
+  }
+
+  .currency__name_container3 {
+    width: 100%;
+  }
+
+  .currency__name_currency3 {
+    width: 99%;
+    font-size: 1.21rem;
+  }
+
+  .currency__name_container {
+    width: 97%;
+  }
+
+  .get__started_p h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 8%;
+  }
+
+  .get__started_button {
+    width: 99%;
+    margin-top: 3%;
+  }
+
+  .get__started_button button {
+    width: 170px;
+    padding: 2.4%;
+  }
+
+  .currency__mainheading {
+    display: block;
+  }
+
+  .currency__mainheading h2 {
+    font-size: 1.8rem;
+  }
+
+  .currency__name_detail1 {
+    width: 100%;
+  }
+
+  .get__started_button button {
+    width: 170px;
+    padding: 4.4%;
+  }
+
+  .ads {
+    width: min(90%);
+    height: fit-content;
+    justify-content: space-around;
+    margin-top: 6%;
+    padding: 2%;
+    background-color: red;
+  }
+
+  .ads__container {
+    width: 90%;
+    height: 81vh;
+    line-height: 1.1;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+
+  .currency__mainheading {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+    /* background-color: pink; */
   }
 }
