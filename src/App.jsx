@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/jsx-no-constructed-context-values */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -28,8 +29,6 @@ function App() {
           `https://openexchangerates.org/api/currencies.json?app_id=${apiKey}`
         );
         setCurrencies(response.data);
-        console.log(response.data);
-        console.log(currencies);
       } catch (err) {
         console.error(err);
       }
@@ -57,15 +56,11 @@ function App() {
         const amount3 = currency3 * rates.XAF;
         const total = `${(amount2 + amount3 + currency1).toFixed(2)} USD`;
         setTotalCurrency(total);
-        console.log(setTotalCurrency(total));
-        console.log(total);
       } else if (select === 'EUR') {
         const amount1 = currency1 * rates.USD;
         const amount3 = currency3 * rates.XAF;
         const total = `${(amount1 + amount3 + currency2).toFixed(2)} EUR`;
         setTotalCurrency(total);
-        console.log(setTotalCurrency);
-        console.log(total);
       } else {
         const amount1 = currency1 * rates.USD;
         const amount2 = currency2 * rates.EUR;
@@ -95,12 +90,8 @@ function App() {
   }
 
   async function handleConvert() {
-    console.log(rater);
     const conversionRate = rater[toCurrency] / rater[fromCurrency];
     setConvertedAmount(amount * conversionRate).toFixed(2);
-    console.log(rater.USD, rater.EUR, rater.XAF);
-
-    console.log(setTotalCurrency);
   }
 
   return (
