@@ -1,0 +1,30 @@
+.wallet {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #0d3481f3;
+  --second-color: #ffac38;
+  --text-color: #292727b4;
+  --gradient: linear-gradient(#fe5b3d, #ffac38);
+}
+/* custom scroll bar  */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}

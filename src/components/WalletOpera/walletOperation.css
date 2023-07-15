@@ -1,0 +1,165 @@
+.wallet__operation {
+  width: 53%;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(67, 67, 68, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 1%;
+  background-color: #fafafa;
+  margin-top: 1%;
+}
+
+.wallet__operationContainer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c8deff33;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.operation__totalAmt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.multi__task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deposit__btn {
+  width: 130px;
+  padding: 9%;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0071eb;
+  cursor: pointer;
+}
+
+.deposit__btn :hover {
+  background-color: #0072eb9a;
+  transition: 0.3s;
+}
+
+.transfer__btn {
+  width: 170px;
+  padding: 9%;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #6600eb;
+  cursor: pointer;
+}
+
+.transfer__btn:hover {
+  transition: 0.5s;
+  background-color: #6600eb98;
+}
+
+.Wallets__holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.select__initial_value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.wallet__one {
+  width: 280px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(67, 67, 68, 0.2) 0px 7px 29px 0px;
+}
+
+.select__defult {
+  width: 80px;
+  padding: 3%;
+  background-color: #46c9e05d;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .wallet__operation {
+    width: 92%;
+  }
+}
+
+@media (max-width: 650px) {
+  .wallet__operation {
+    width: 98%;
+  }
+
+  .multi__task {
+    width: 100%;
+    display: block;
+    margin-top: 3%;
+  }
+
+  .deposit__btn {
+    width: 296px;
+    padding: 7%;
+    margin-bottom: 2%;
+  }
+
+  .transfer__btn {
+    width: 289px;
+    padding: 7%;
+  }
+
+  .select__initial_value {
+    margin-top: 2%;
+  }
+
+  .select__defult {
+    width: 115px;
+  }
+
+  .select__defult option {
+    background-color: white;
+  }
+
+  .wallet__operation {
+    height: fit-content;
+  }
+
+  .Wallets__holder {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+
+  .wallet__one {
+    width: 294px;
+    margin-bottom: 2%;
+  }
+
+  .operation__totalAmt {
+    width: 100%;
+    justify-content: center;
+  }
+}

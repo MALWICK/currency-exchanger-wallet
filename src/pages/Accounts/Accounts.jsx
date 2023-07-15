@@ -1,27 +1,25 @@
 import React from 'react';
-import './Wallet.css';
+import './account.css';
 import WalletNavbar from '../../components/WalletNavBar/WalletNavbar';
 import WalletConta1 from '../../components/WalletCont1/WalletConta1';
-import WalletActtion from '../../components/WalletAction/WalletAction';
+import WalletOPeration from '../../components/WalletOpera/WalletOPeration';
 import WalletDetails from '../../components/WalletDetails/WalletDetails';
 import PortFolio from '../../components/PortFolio/PortFolio';
-import ToolsCard from '../../components/ToolsCards/ToolCards';
+import Testimonial from '../../components/testi/Testimonial';
 import Banner from '../../components/Banner/Banner';
-import Testi from '../../components/testi/Testimonial';
 
-function Wallet() {
+function Accounts() {
   return (
-    <div className="wallet">
+    <div className="accounts">
       <WalletNavbar />
       <WalletConta1 />
-      <WalletActtion />
+      <WalletOPeration />
       <WalletDetails />
       <PortFolio />
-      <ToolsCard />
-      <Testi />
+      <Testimonial />
       <Banner />
     </div>
   );
 }
 
-export default Wallet;
+export default Accounts;
